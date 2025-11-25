@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Kevin Alvarado - Desarrollador Full Stack</title>
-  <meta name="description" content="Desarrollador Full Stack especializado en Node.js, React, Python y gestión de bases de datos">
-  <meta name="keywords" content="Desarrollador, Full Stack, Node.js, React, Python, MySQL, PostgreSQL">
+  <title>Servicios - Kevin Alvarado</title>
+  <meta name="description" content="Servicios de desarrollo web ofrecidos por Kevin Alvarado: aplicaciones Full Stack, APIs REST, bases de datos">
+  <meta name="keywords" content="Servicios, Desarrollo Web, APIs, Bases de Datos, Full Stack">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -36,7 +36,7 @@
   ======================================================== -->
 </head>
 
-<body class="index-page">
+<body class="services-page">
 
   <header id="header" class="header d-flex align-items-center light-background sticky-top">
     <div class="container position-relative d-flex align-items-center justify-content-between">
@@ -48,10 +48,10 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="resume.html">Resume</a></li>
-          <li><a href="services.html">Services</a></li>
+          <li><a href="services.html" class="active">Services</a></li>
           <li><a href="portfolio.html">Portfolio</a></li>
           <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
@@ -87,55 +87,120 @@
 
   <main class="main">
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero section">
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Servicios</h2>
+        <p>Ofrezco servicios profesionales de desarrollo web con tecnologías modernas y mejores prácticas. Soluciones personalizadas desde el backend hasta el frontend, con énfasis en calidad, rendimiento y escalabilidad.</p>
+      </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="row gy-4 align-items-center">
-          <div class="col-lg-6 order-2 order-lg-1">
-            <div class="hero-content">
-              <h1 data-aos="fade-up" data-aos-delay="200">Hola, soy <span class="highlight">Kevin Alvarado</span></h1>
-              <h2 data-aos="fade-up" data-aos-delay="300">Desarrollador <span class="typed" data-typed-items="Full Stack, Backend con Node.js, Frontend con React, Python Developer, Database Specialist"></span></h2>
-              <p data-aos="fade-up" data-aos-delay="400">Desarrollador Full Stack con experiencia en Node.js, React, Python y gestión de bases de datos. Apasionado por crear soluciones eficientes y escalables, con sólidos conocimientos en desarrollo backend y frontend, así como en administración de bases de datos SQL y NoSQL.</p>
-              <div class="hero-actions" data-aos="fade-up" data-aos-delay="500">
-                <a href="portfolio.html" class="btn btn-primary">View My Work</a>
-                <a href="contact.html" class="btn btn-outline">Get In Touch</a>
+        <div class="row justify-content-center g-5">
+
+          <div class="col-md-6" data-aos="fade-right" data-aos-delay="100">
+            <div class="service-item">
+              <div class="service-icon">
+                <i class="bi bi-code-slash"></i>
               </div>
-              <div class="social-links" data-aos="fade-up" data-aos-delay="600">
-                <a href="https://github.com/KevinXx04"><i class="bi bi-github"></i></a>
-                <a href="https://www.linkedin.com/in/kevin-alvarado-a0a3422b2/"><i class="bi bi-linkedin"></i></a>
-                <a href="mailto:kevinalvarado2004@gmail.com"><i class="bi bi-envelope"></i></a>
-                <a href="tel:+50688888888"><i class="bi bi-telephone"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 order-1 order-lg-2">
-            <div class="hero-image" data-aos="zoom-in" data-aos-delay="300">
-              <div class="image-wrapper">
-                <img src="assets/img/profile/profile-square-11.webp" alt="Sarah Mitchell" class="img-fluid">
-                <div class="floating-elements">
-                  <div class="floating-card design" data-aos="fade-left" data-aos-delay="700">
-                    <i class="bi bi-palette"></i>
-                    <span>Design</span>
-                  </div>
-                  <div class="floating-card code" data-aos="fade-right" data-aos-delay="800">
-                    <i class="bi bi-code-slash"></i>
-                    <span>Code</span>
-                  </div>
-                  <div class="floating-card creativity" data-aos="fade-up" data-aos-delay="900">
-                    <i class="bi bi-lightbulb"></i>
-                    <span>Ideas</span>
-                  </div>
-                </div>
+              <div class="service-content">
+                <h3>Desarrollo Backend</h3>
+                <p>Creación de APIs RESTful robustas y escalables con Node.js y Express. Implementación de lógica de negocio compleja, autenticación JWT, manejo de sesiones y arquitecturas de microservicios. Código limpio, documentado y optimizado para alto rendimiento.</p>
+                <a href="service-details.html" class="service-link">
+                  <span>Más Información</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
               </div>
             </div>
-          </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-md-6" data-aos="fade-left" data-aos-delay="100">
+            <div class="service-item">
+              <div class="service-icon">
+                <i class="bi bi-window"></i>
+              </div>
+              <div class="service-content">
+                <h3>Desarrollo Frontend</h3>
+                <p>Interfaces de usuario modernas y responsivas con React. Componentes reutilizables, gestión de estado eficiente, integración con APIs y experiencia de usuario optimizada. Diseños adaptativos que funcionan en todos los dispositivos.</p>
+                <a href="service-details.html" class="service-link">
+                  <span>Más Información</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-md-6" data-aos="fade-right" data-aos-delay="200">
+            <div class="service-item">
+              <div class="service-icon">
+                <i class="bi bi-database"></i>
+              </div>
+              <div class="service-content">
+                <h3>Gestión de Bases de Datos</h3>
+                <p>Diseño, implementación y optimización de bases de datos relacionales (MySQL, PostgreSQL) y no relacionales (MongoDB, Cassandra). Modelado de datos, índices, consultas optimizadas y estrategias de backup. Aseguro integridad y rendimiento de los datos.</p>
+                <a href="service-details.html" class="service-link">
+                  <span>Más Información</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-md-6" data-aos="fade-left" data-aos-delay="200">
+            <div class="service-item">
+              <div class="service-icon">
+                <i class="bi bi-stack"></i>
+              </div>
+              <div class="service-content">
+                <h3>Aplicaciones Full Stack</h3>
+                <p>Desarrollo completo de aplicaciones web desde el frontend hasta el backend. Integración perfecta entre cliente y servidor, gestión de estado, autenticación, autorización y despliegue en producción. Soluciones end-to-end personalizadas.</p>
+                <a href="service-details.html" class="service-link">
+                  <span>Más Información</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-md-6" data-aos="fade-right" data-aos-delay="300">
+            <div class="service-item">
+              <div class="service-icon">
+                <i class="bi bi-git"></i>
+              </div>
+              <div class="service-content">
+                <h3>Control de Versiones</h3>
+                <p>Implementación de flujos de trabajo con Git y GitHub. Gestión de ramas, pull requests, integración continua y despliegue continuo (CI/CD). Colaboración efectiva en equipos de desarrollo con mejores prácticas de versionado.</p>
+                <a href="service-details.html" class="service-link">
+                  <span>Más Información</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-md-6" data-aos="fade-left" data-aos-delay="300">
+            <div class="service-item">
+              <div class="service-icon">
+                <i class="bi bi-tools"></i>
+              </div>
+              <div class="service-content">
+                <h3>Mantenimiento y Soporte</h3>
+                <p>Mantenimiento continuo de aplicaciones web, corrección de errores, actualizaciones de seguridad y optimización de rendimiento. Soporte técnico, monitoreo de aplicaciones y resolución proactiva de problemas para garantizar disponibilidad 24/7.</p>
+                <a href="service-details.html" class="service-link">
+                  <span>Más Información</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
         </div>
 
       </div>
 
-    </section><!-- /Hero Section -->
+    </section><!-- /Services Section -->
 
   </main>
 
