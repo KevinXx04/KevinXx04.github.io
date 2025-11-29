@@ -665,6 +665,103 @@ h6 {
   opacity: 1;
 }
 
+/* Project Modal Styles */
+.project-modal-hero {
+  max-height: 400px;
+  overflow: hidden;
+  background-color: var(--background-color);
+}
+
+.project-modal-hero img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.project-modal-title h2 {
+  color: var(--heading-color);
+  font-family: var(--heading-font);
+  margin-bottom: 0.5rem;
+}
+
+.project-modal-title p {
+  font-size: 1.1rem;
+  color: var(--default-color);
+  opacity: 0.8;
+}
+
+.project-modal-section h4 {
+  color: var(--heading-color);
+  font-family: var(--heading-font);
+  font-weight: 600;
+  border-bottom: 2px solid var(--accent-color);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.project-modal-section p,
+.project-modal-section ul {
+  color: var(--default-color);
+  line-height: 1.8;
+}
+
+.project-modal-section ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.project-modal-section ul li {
+  padding-left: 1.5rem;
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+
+.project-modal-section ul li:before {
+  content: "▹";
+  color: var(--accent-color);
+  position: absolute;
+  left: 0;
+  font-size: 1.2rem;
+}
+
+.architecture-description {
+  background-color: color-mix(in srgb, var(--surface-color), transparent 30%);
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid var(--accent-color);
+}
+
+.technologies-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.technologies-grid .badge {
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  background-color: var(--accent-color) !important;
+}
+
+.collaborators-info ul {
+  background-color: color-mix(in srgb, var(--surface-color), transparent 30%);
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+}
+
+.btn-outline-primary {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+  transition: all 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  color: var(--contrast-color);
+}
+
 /*--------------------------------------------------------------
 # Global Page Titles & Breadcrumbs
 --------------------------------------------------------------*/

@@ -83,121 +83,21 @@
           </ul><!-- End Portfolio Filters -->
 
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-strategy">
-              <div class="portfolio-card">
-                <div class="portfolio-img">
-                  <img src="assets/img/portfolio/portfolio-1.webp" alt="Proyecto de Portafolio" class="img-fluid">
-                  <div class="portfolio-overlay">
-                    <a href="assets/img/portfolio/portfolio-1.webp" class="glightbox portfolio-lightbox"><i class="bi bi-plus"></i></a>
-                    <a href="#" class="portfolio-details-link"><i class="bi bi-link"></i></a>
-                  </div>
-                </div>
-                <div class="portfolio-info">
-                  <h4>Aplicación E-commerce</h4>
-                  <p>Desarrollo Full Stack</p>
-                  <div class="portfolio-tags">
-                    <span>React</span>
-                    <span>Node.js</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-finance">
-              <div class="portfolio-card">
-                <div class="portfolio-img">
-                  <img src="assets/img/portfolio/portfolio-2.webp" alt="Proyecto de Portafolio" class="img-fluid">
-                  <div class="portfolio-overlay">
-                    <a href="assets/img/portfolio/portfolio-2.webp" class="glightbox portfolio-lightbox"><i class="bi bi-plus"></i></a>
-                    <a href="#" class="portfolio-details-link"><i class="bi bi-link"></i></a>
-                  </div>
-                </div>
-                <div class="portfolio-info">
-                  <h4>API REST Empresarial</h4>
-                  <p>Desarrollo Backend</p>
-                  <div class="portfolio-tags">
-                    <span>Node.js</span>
-                    <span>Express</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-operations">
-              <div class="portfolio-card">
-                <div class="portfolio-img">
-                  <img src="assets/img/portfolio/portfolio-3.webp" alt="Proyecto de Portafolio" class="img-fluid">
-                  <div class="portfolio-overlay">
-                    <a href="assets/img/portfolio/portfolio-3.webp" class="glightbox portfolio-lightbox"><i class="bi bi-plus"></i></a>
-                    <a href="#" class="portfolio-details-link"><i class="bi bi-link"></i></a>
-                  </div>
-                </div>
-                <div class="portfolio-info">
-                  <h4>Dashboard Interactivo</h4>
-                  <p>Desarrollo Frontend</p>
-                  <div class="portfolio-tags">
-                    <span>React</span>
-                    <span>CSS3</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-technology">
               <div class="portfolio-card">
                 <div class="portfolio-img">
-                  <img src="assets/img/portfolio/portfolio-4.webp" alt="Proyecto de Portafolio" class="img-fluid">
+                  <img src="(Ruta de la imagen del proyecto)" alt="(Descripción de la imagen)" class="img-fluid">
                   <div class="portfolio-overlay">
-                    <a href="assets/img/portfolio/portfolio-4.webp" class="glightbox portfolio-lightbox"><i class="bi bi-plus"></i></a>
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#projectModal" class="portfolio-lightbox"><i class="bi bi-plus"></i></a>
                     <a href="#" class="portfolio-details-link"><i class="bi bi-link"></i></a>
                   </div>
                 </div>
                 <div class="portfolio-info">
-                  <h4>Sistema de Gestión</h4>
-                  <p>Full Stack MERN</p>
+                  <h4>(Nombre del proyecto)</h4>
+                  <p>(Descripción breve del proyecto)</p>
                   <div class="portfolio-tags">
-                    <span>MongoDB</span>
-                    <span>React</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-strategy">
-              <div class="portfolio-card">
-                <div class="portfolio-img">
-                  <img src="assets/img/portfolio/portfolio-5.webp" alt="Proyecto de Portafolio" class="img-fluid">
-                  <div class="portfolio-overlay">
-                    <a href="assets/img/portfolio/portfolio-5.webp" class="glightbox portfolio-lightbox"><i class="bi bi-plus"></i></a>
-                    <a href="#" class="portfolio-details-link"><i class="bi bi-link"></i></a>
-                  </div>
-                </div>
-                <div class="portfolio-info">
-                  <h4>Plataforma Educativa</h4>
-                  <p>Aplicación Web</p>
-                  <div class="portfolio-tags">
-                    <span>Python</span>
-                    <span>Django</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-finance">
-              <div class="portfolio-card">
-                <div class="portfolio-img">
-                  <img src="assets/img/portfolio/portfolio-6.webp" alt="Proyecto de Portafolio" class="img-fluid">
-                  <div class="portfolio-overlay">
-                    <a href="assets/img/portfolio/portfolio-6.webp" class="glightbox portfolio-lightbox"><i class="bi bi-plus"></i></a>
-                    <a href="#" class="portfolio-details-link"><i class="bi bi-link"></i></a>
-                  </div>
-                </div>
-                <div class="portfolio-info">
-                  <h4>Base de Datos Distribuida</h4>
-                  <p>Arquitectura Backend</p>
-                  <div class="portfolio-tags">
-                    <span>PostgreSQL</span>
-                    <span>Cassandra</span>
+                    <span>(Tecnología 1)</span>
+                    <span>(Tecnología 2)</span>
                   </div>
                 </div>
               </div>
@@ -215,6 +115,86 @@
     </section><!-- /Portfolio Section -->
 
   </main>
+
+  <!-- Project Details Modal -->
+  <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-0">
+          <!-- Project Image Hero -->
+          <div class="project-modal-hero">
+            <img src="(Ruta de la imagen del proyecto)" alt="(Descripción de la imagen)" class="img-fluid w-100">
+          </div>
+
+          <div class="container py-4">
+            <!-- Project Title -->
+            <div class="project-modal-title mb-4">
+              <h2 class="fw-bold">(Nombre del proyecto)</h2>
+              <p class="text-muted">(Descripción breve del proyecto)</p>
+            </div>
+
+            <!-- Project Description -->
+            <div class="project-modal-section mb-4">
+              <h4 class="mb-3"><i class="bi bi-file-text me-2"></i>Descripción del Proyecto</h4>
+              <p>(Descripción detallada del proyecto, objetivos, características principales y funcionalidades implementadas)</p>
+            </div>
+
+            <!-- GitHub Repository -->
+            <div class="project-modal-section mb-4">
+              <h4 class="mb-3"><i class="bi bi-github me-2"></i>Repositorio de GitHub</h4>
+              <a href="(URL del repositorio de GitHub)" target="_blank" class="btn btn-outline-primary">
+                <i class="bi bi-github me-2"></i>Ver en GitHub
+              </a>
+            </div>
+
+            <!-- Project Architecture -->
+            <div class="project-modal-section mb-4">
+              <h4 class="mb-3"><i class="bi bi-diagram-3 me-2"></i>Arquitectura del Proyecto</h4>
+              <div class="architecture-description">
+                <p>(Descripción de la arquitectura general del proyecto: frontend, backend, base de datos, APIs utilizadas, patrones de diseño, etc.)</p>
+                <ul>
+                  <li>(Componente de arquitectura 1)</li>
+                  <li>(Componente de arquitectura 2)</li>
+                  <li>(Componente de arquitectura 3)</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Technologies Applied -->
+            <div class="project-modal-section mb-4">
+              <h4 class="mb-3"><i class="bi bi-gear me-2"></i>Tecnologías Aplicadas</h4>
+              <div class="technologies-grid">
+                <span class="badge bg-primary me-2 mb-2">(Tecnología 1)</span>
+                <span class="badge bg-primary me-2 mb-2">(Tecnología 2)</span>
+                <span class="badge bg-primary me-2 mb-2">(Tecnología 3)</span>
+                <span class="badge bg-primary me-2 mb-2">(Tecnología 4)</span>
+                <span class="badge bg-primary me-2 mb-2">(Tecnología 5)</span>
+              </div>
+            </div>
+
+            <!-- Collaborators -->
+            <div class="project-modal-section mb-4">
+              <h4 class="mb-3"><i class="bi bi-people me-2"></i>Colaboradores</h4>
+              <div class="collaborators-info">
+                <p>(Nombres de los colaboradores del proyecto o "Proyecto desarrollado en solitario")</p>
+                <ul>
+                  <li>(Colaborador 1 - Rol)</li>
+                  <li>(Colaborador 2 - Rol)</li>
+                </ul>
+                <p class="text-muted"><em>O si fue trabajo individual: "Este proyecto fue desarrollado en solitario por Kevin Alvarado"</em></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer border-0">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <footer id="footer" class="footer">
 
