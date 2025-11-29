@@ -94,7 +94,7 @@
                 </div>
                 <div class="portfolio-info">
                   <h4>Backend Funcavida</h4>
-                  <p>Participación en el desarrollo del backend de diversos módulos dentro del sistema de gestión deFuncavida.</p>
+                  <p>Backend robusto desarrollado para el sistema de gestión de Funcavida, una organización no gubernamental dedicada al apoyo integral de sobrevivientes de cáncer en Costa Rica.</p>
                   <div class="portfolio-tags">
                     <span>Node.js</span>
                     <span>Nodemailer</span>
@@ -133,13 +133,13 @@
             <!-- Project Title -->
             <div class="project-modal-title mb-4">
               <h2 class="fw-bold">Backend Funcavida</h2>
-              <p class="text-muted">Participación en el desarrollo del backend de diversos módulos dentro del sistema de gestión de Funcavida.</p>
+              <p class="text-muted"></p>
             </div>
 
             <!-- Project Description -->
             <div class="project-modal-section mb-4">
               <h4 class="mb-3"><i class="bi bi-file-text me-2"></i>Descripción del Proyecto</h4>
-              <p>Desarrollo de múltiples módulos backend para el sistema de gestión de Funcavida, una organización no gubernamental. El proyecto incluye la implementación de APIs RESTful, integración de servicios de envío de correos electrónicos, y gestión de datos. Se trabajó en equipo siguiendo metodologías ágiles y prácticas de desarrollo colaborativo con control de versiones.</p>
+              <p>El proyecto implementa una API RESTful con arquitectura en capas (MVC + Service/Repository), integrando autenticación JWT, gestión de permisos basada en roles, y un sistema completo de recuperación de contraseñas por email. Se trabajó en equipo siguiendo metodologías ágiles y prácticas de desarrollo colaborativo con control de versiones.</p>
             </div>
 
             <!-- GitHub Repository -->
@@ -154,13 +154,24 @@
             <div class="project-modal-section mb-4">
               <h4 class="mb-3"><i class="bi bi-diagram-3 me-2"></i>Arquitectura del Proyecto</h4>
               <div class="architecture-description">
-                <p>Arquitectura backend basada en Node.js con patrón MVC (Modelo-Vista-Controlador), implementando APIs RESTful para la comunicación con el frontend y servicios externos.</p>
+                <p>Arquitectura backend basada en Node.js con patrón MVC (Modelo-Vista-Controlador), implementando APIs RESTful para la comunicación con el frontend y servicios externos:</p>
                 <ul>
                   <li>API RESTful con Express.js para manejo de rutas y controladores</li>
-                  <li>Servicio de envío de correos electrónicos con Nodemailer</li>
-                  <li>Base de datos para gestión y persistencia de datos</li>
-                  <li>Sistema de autenticación y autorización de usuarios</li>
-                  <li>Integración con módulos de gestión de la ONG</li>
+                  <li>Servicio de envío de correos electrónicos con Nodemailer para recuperación de contraseñas</li>
+                  <li>Base de datos para gestión y persistencia de datos con Prisma ORM y MySQL</li>
+                  <li>Sistema de autenticación y autorización de usuarios con JWT y bcrypt</li>
+                  <li>Integración con módulos de gestión de la ONG:
+                    <ul>
+                      <li>Gestión de Usuarios, Roles y Permisos (RBAC - Control de acceso basado en roles)</li>
+                      <li>Gestión de Sobrevivientes, Padrinos y Voluntarios (Con relaciones complejas)</li>
+                      <li>Gestión de Actividades, Sedes y Activos (Sistema completo de eventos y recursos)</li>
+                      <li>Gestión de Proveedores y Categorías (Control de inventario y clasificación)</li>
+                      <li>Sistema de Contactos de Emergencia (Para todos los participantes)</li>
+                      <li>Bitácoras de Seguridad (Audit logs para todas las operaciones críticas)</li>
+                      <li>Recuperación de Contraseñas (Sistema completo con tokens seguros y expiración)</li>
+                      <li>Estadísticas y Reportes (Dashboard con métricas clave de la organización)</li>
+                    </ul>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -168,13 +179,18 @@
             <!-- Technologies Applied -->
             <div class="project-modal-section mb-4">
               <h4 class="mb-3"><i class="bi bi-gear me-2"></i>Tecnologías Aplicadas</h4>
-              <div class="technologies-grid">
-                <span class="badge bg-primary me-2 mb-2">Node.js</span>
-                <span class="badge bg-primary me-2 mb-2">Express.js</span>
-                <span class="badge bg-primary me-2 mb-2">Nodemailer</span>
-                <span class="badge bg-primary me-2 mb-2">JavaScript</span>
-                <span class="badge bg-primary me-2 mb-2">RESTful APIs</span>
-                <span class="badge bg-primary me-2 mb-2">Git</span>
+              <div class="technologies-list">
+                <ul>
+                  <li><strong>Node.js</strong> - Entorno de ejecución de JavaScript del lado del servidor</li>
+                  <li><strong>Express.js</strong> - Framework web minimalista y flexible para Node.js</li>
+                  <li><strong>Nodemailer</strong> - Biblioteca para envío de correos electrónicos (recuperación de contraseñas)</li>
+                  <li><strong>JavaScript</strong> - Lenguaje de programación principal del backend</li>
+                  <li><strong>Prisma ORM</strong> - ORM moderno para Node.js con TypeScript support</li>
+                  <li><strong>MySQL</strong> - Sistema de gestión de base de datos relacional</li>
+                  <li><strong>JWT (JSON Web Tokens)</strong> - Autenticación y autorización segura sin estado</li>
+                  <li><strong>bcrypt</strong> - Hash de contraseñas con algoritmo de encriptación fuerte</li>
+                  <li><strong>Git</strong> - Control de versiones distribuido para desarrollo colaborativo</li>
+                </ul>
               </div>
             </div>
 
@@ -182,10 +198,13 @@
             <div class="project-modal-section mb-4">
               <h4 class="mb-3"><i class="bi bi-people me-2"></i>Colaboradores</h4>
               <div class="collaborators-info">
-                <p>Este proyecto fue desarrollado en equipo como parte de la iniciativa de Funcavida. Mi participación se enfocó en el desarrollo backend de diversos módulos del sistema.</p>
+                <p>Este proyecto fue desarrollado como parte de un voluntariado con un grupo de estudiantes de la carrera de informática empresarial de la Universidad de Costa Rica en colaboración con el encargado de TI de Funcavida.</p>
                 <ul>
-                  <li>Kevin Alvarado - Desarrollador Backend</li>
-                  <li>Equipo de desarrollo de Funcavida</li>
+                  <li>Kevin Alonso Alvarado Vargas - <a href="https://github.com/KevinXx04" target="_blank">https://github.com/KevinXx04</a></li>
+                  <li>Stephanie Venegas Villalobos - <a href="https://github.com/stephvv23" target="_blank">https://github.com/stephvv23</a></li>
+                  <li>Johan Sebastián Atehortúa Duarte - <a href="https://github.com/sehjo" target="_blank">https://github.com/sehjo</a></li>
+                  <li>Juan José Lara Castillo - <a href="https://github.com/JlaraCast" target="_blank">https://github.com/JlaraCast</a></li>
+                  <li>Elmer Josué Rodríguez Mendoza - <a href="https://github.com/ejBlack12" target="_blank">https://github.com/ejBlack12</a></li>
                 </ul>
               </div>
             </div>
