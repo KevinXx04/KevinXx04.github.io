@@ -83,12 +83,12 @@
           </ul><!-- End Portfolio Filters -->
 
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-technology">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-finance">
               <div class="portfolio-card">
                 <div class="portfolio-img">
-                  <img src="assets/img/portfolio/funcavida_backend.png" alt="(Descripción de la imagen)" class="img-fluid">
+                  <img src="assets/img/portfolio/funcavida_backend.png" alt="Backend Funcavida" class="img-fluid">
                   <div class="portfolio-overlay">
-                    <a href="#" data-bs-toggle="modal" data-bs-target="#projectModal" class="portfolio-lightbox"><i class="bi bi-plus"></i></a>
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#projectModalBackend" class="portfolio-lightbox"><i class="bi bi-plus"></i></a>
                     <a href="https://github.com/stephvv23/API-Node.js-/tree/Q%26A-api" target="_blank" class="portfolio-details-link"><i class="bi bi-link"></i></a>
                   </div>
                 </div>
@@ -98,6 +98,26 @@
                   <div class="portfolio-tags">
                     <span>Node.js</span>
                     <span>Nodemailer</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-operations">
+              <div class="portfolio-card">
+                <div class="portfolio-img">
+                  <img src="assets/img/portfolio/funcavida_frontend.png" alt="Frontend Funcavida" class="img-fluid">
+                  <div class="portfolio-overlay">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#projectModalFrontend" class="portfolio-lightbox"><i class="bi bi-plus"></i></a>
+                    <a href="(URL del repositorio frontend)" target="_blank" class="portfolio-details-link"><i class="bi bi-link"></i></a>
+                  </div>
+                </div>
+                <div class="portfolio-info">
+                  <h4>Frontend Funcavida</h4>
+                  <p>Frontend robusto desarrollado para el sistema de gestión de Funcavida, una organización no gubernamental dedicada al apoyo integral de sobrevivientes de cáncer en Costa Rica.</p>
+                  <div class="portfolio-tags">
+                    <span>React</span>
+                    <span>TypeScript</span>
                   </div>
                 </div>
               </div>
@@ -116,8 +136,8 @@
 
   </main>
 
-  <!-- Project Details Modal -->
-  <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
+  <!-- Project Details Modal Backend -->
+  <div class="modal fade" id="projectModalBackend" tabindex="-1" aria-labelledby="projectModalBackendLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-xl modal-dialog-scrollable">
       <div class="modal-content">
         <div class="modal-header border-0">
@@ -189,6 +209,106 @@
                   <li><strong>MySQL</strong> - Sistema de gestión de base de datos relacional</li>
                   <li><strong>JWT (JSON Web Tokens)</strong> - Autenticación y autorización segura sin estado</li>
                   <li><strong>bcrypt</strong> - Hash de contraseñas con algoritmo de encriptación fuerte</li>
+                  <li><strong>Git</strong> - Control de versiones distribuido para desarrollo colaborativo</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Collaborators -->
+            <div class="project-modal-section mb-4">
+              <h4 class="mb-3"><i class="bi bi-people me-2"></i>Colaboradores</h4>
+              <div class="collaborators-info">
+                <p>Este proyecto fue desarrollado como parte de un voluntariado con un grupo de estudiantes de la carrera de informática empresarial de la Universidad de Costa Rica en colaboración con el encargado de TI de Funcavida.</p>
+                <ul>
+                  <li>Kevin Alonso Alvarado Vargas - <a href="https://github.com/KevinXx04" target="_blank">https://github.com/KevinXx04</a></li>
+                  <li>Stephanie Venegas Villalobos - <a href="https://github.com/stephvv23" target="_blank">https://github.com/stephvv23</a></li>
+                  <li>Johan Sebastián Atehortúa Duarte - <a href="https://github.com/sehjo" target="_blank">https://github.com/sehjo</a></li>
+                  <li>Juan José Lara Castillo - <a href="https://github.com/JlaraCast" target="_blank">https://github.com/JlaraCast</a></li>
+                  <li>Elmer Josué Rodríguez Mendoza - <a href="https://github.com/ejBlack12" target="_blank">https://github.com/ejBlack12</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer border-0">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Project Details Modal Frontend -->
+  <div class="modal fade" id="projectModalFrontend" tabindex="-1" aria-labelledby="projectModalFrontendLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-0">
+          <!-- Project Image Hero -->
+          <div class="project-modal-hero">
+            <img src="assets/img/portfolio/funcavida_frontend.png" alt="Frontend Funcavida" class="img-fluid w-100">
+          </div>
+
+          <div class="container py-4">
+            <!-- Project Title -->
+            <div class="project-modal-title mb-4">
+              <h2 class="fw-bold">Frontend Funcavida</h2>
+              <p class="text-muted"></p>
+            </div>
+
+            <!-- Project Description -->
+            <div class="project-modal-section mb-4">
+              <h4 class="mb-3"><i class="bi bi-file-text me-2"></i>Descripción del Proyecto</h4>
+              <p>El proyecto implementa una interfaz de usuario moderna y responsiva utilizando React y TypeScript, con arquitectura basada en componentes reutilizables y gestión de estado eficiente. Integra autenticación segura, sistema de rutas protegidas y consumo de APIs RESTful. Se trabajó en equipo siguiendo metodologías ágiles y prácticas de desarrollo colaborativo con control de versiones.</p>
+            </div>
+
+            <!-- GitHub Repository -->
+            <div class="project-modal-section mb-4">
+              <h4 class="mb-3"><i class="bi bi-github me-2"></i>Repositorio de GitHub</h4>
+              <a href="(URL del repositorio frontend)" target="_blank" class="btn btn-outline-primary">
+                <i class="bi bi-github me-2"></i>Ver en GitHub
+              </a>
+            </div>
+
+            <!-- Project Architecture -->
+            <div class="project-modal-section mb-4">
+              <h4 class="mb-3"><i class="bi bi-diagram-3 me-2"></i>Arquitectura del Proyecto</h4>
+              <div class="architecture-description">
+                <p>Arquitectura frontend basada en React con TypeScript, implementando patrones modernos de desarrollo y comunicación con APIs RESTful:</p>
+                <ul>
+                  <li>Componentes React reutilizables con TypeScript para tipado fuerte</li>
+                  <li>Sistema de rutas con React Router y protección de rutas basada en autenticación</li>
+                  <li>Gestión de estado global para manejo eficiente de datos</li>
+                  <li>Integración con API backend mediante Axios para comunicación HTTP</li>
+                  <li>Interfaz de usuario para módulos de gestión de la ONG:
+                    <ul>
+                      <li>Dashboard de Usuarios, Roles y Permisos con control de acceso visual</li>
+                      <li>Interfaces para gestión de Sobrevivientes, Padrinos y Voluntarios</li>
+                      <li>Sistema de gestión de Actividades, Sedes y Activos con calendarios interactivos</li>
+                      <li>Módulo de Proveedores y Categorías con filtros y búsqueda avanzada</li>
+                      <li>Formularios de Contactos de Emergencia con validación en tiempo real</li>
+                      <li>Visualización de Bitácoras de Seguridad con tablas paginadas</li>
+                      <li>Sistema de Recuperación de Contraseñas con validación de tokens</li>
+                      <li>Dashboard de Estadísticas y Reportes con gráficos interactivos</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Technologies Applied -->
+            <div class="project-modal-section mb-4">
+              <h4 class="mb-3"><i class="bi bi-gear me-2"></i>Tecnologías Aplicadas</h4>
+              <div class="technologies-list">
+                <ul>
+                  <li><strong>React</strong> - Biblioteca de JavaScript para construir interfaces de usuario</li>
+                  <li><strong>TypeScript</strong> - Superset de JavaScript con tipado estático</li>
+                  <li><strong>React Router</strong> - Librería de enrutamiento para aplicaciones React</li>
+                  <li><strong>Axios</strong> - Cliente HTTP para realizar peticiones a la API</li>
+                  <li><strong>CSS3/SCSS</strong> - Estilos modernos y responsivos</li>
+                  <li><strong>Vite</strong> - Herramienta de construcción rápida para proyectos frontend</li>
+                  <li><strong>ESLint</strong> - Herramienta de análisis de código para mantener calidad</li>
                   <li><strong>Git</strong> - Control de versiones distribuido para desarrollo colaborativo</li>
                 </ul>
               </div>
