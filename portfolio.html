@@ -93,8 +93,8 @@
                   </div>
                 </div>
                 <div class="portfolio-info">
-                  <h4>Backend Funcavida</h4>
-                  <p>Backend robusto desarrollado para el sistema de gestión de Funcavida, una organización no gubernamental dedicada al apoyo integral de sobrevivientes de cáncer en Costa Rica.</p>
+                  <h4>Backend FUNCAVIDA</h4>
+                  <p>Backend robusto desarrollado para el sistema de gestión de FUNCAVIDA, una organización no gubernamental dedicada al apoyo integral de sobrevivientes de cáncer en Costa Rica.</p>
                   <div class="portfolio-tags">
                     <span>Node.js</span>
                     <span>Nodemailer</span>
@@ -113,11 +113,11 @@
                   </div>
                 </div>
                 <div class="portfolio-info">
-                  <h4>Frontend Funcavida</h4>
-                  <p>Frontend robusto desarrollado para el sistema de gestión de Funcavida, una organización no gubernamental dedicada al apoyo integral de sobrevivientes de cáncer en Costa Rica.</p>
+                  <h4>Frontend FUNCAVIDA</h4>
+                  <p>Frontend robusto desarrollado para el sistema de gestión de FUNCAVIDA, una organización no gubernamental dedicada al apoyo integral de sobrevivientes de cáncer en Costa Rica.</p>
                   <div class="portfolio-tags">
-                    <span>React</span>
-                    <span>TypeScript</span>
+                    <span>(Tecnología 1)</span>
+                    <span>(Tecnología 2)</span>
                   </div>
                 </div>
               </div>
@@ -152,7 +152,7 @@
           <div class="container py-4">
             <!-- Project Title -->
             <div class="project-modal-title mb-4">
-              <h2 class="fw-bold">Backend Funcavida</h2>
+              <h2 class="fw-bold">Backend sistema de gestión - FUNCAVIDA</h2>
               <p class="text-muted"></p>
             </div>
 
@@ -218,7 +218,7 @@
             <div class="project-modal-section mb-4">
               <h4 class="mb-3"><i class="bi bi-people me-2"></i>Colaboradores</h4>
               <div class="collaborators-info">
-                <p>Este proyecto fue desarrollado como parte de un voluntariado con un grupo de estudiantes de la carrera de informática empresarial de la Universidad de Costa Rica en colaboración con el encargado de TI de Funcavida.</p>
+                <p>Este proyecto fue desarrollado como parte de un voluntariado con un grupo de estudiantes de la carrera de informática empresarial de la Universidad de Costa Rica en colaboración con el encargado de TI de FUNCAVIDA.</p>
                 <ul>
                   <li>Kevin Alonso Alvarado Vargas - <a href="https://github.com/KevinXx04" target="_blank">https://github.com/KevinXx04</a></li>
                   <li>Stephanie Venegas Villalobos - <a href="https://github.com/stephvv23" target="_blank">https://github.com/stephvv23</a></li>
@@ -253,20 +253,29 @@
           <div class="container py-4">
             <!-- Project Title -->
             <div class="project-modal-title mb-4">
-              <h2 class="fw-bold">Frontend Funcavida</h2>
-              <p class="text-muted"></p>
+              <h2 class="fw-bold">Frontend Sistema de Gestión - FUNCAVIDA</h2>
+              <p class="text-muted">Sistema web completo de gestión administrativa para fundación costarricense</p>
             </div>
 
             <!-- Project Description -->
             <div class="project-modal-section mb-4">
               <h4 class="mb-3"><i class="bi bi-file-text me-2"></i>Descripción del Proyecto</h4>
-              <p>El proyecto implementa una interfaz de usuario moderna y responsiva utilizando React y TypeScript, con arquitectura basada en componentes reutilizables y gestión de estado eficiente. Integra autenticación segura, sistema de rutas protegidas y consumo de APIs RESTful. Se trabajó en equipo siguiendo metodologías ágiles y prácticas de desarrollo colaborativo con control de versiones.</p>
+              <p>
+                Sistema frontend desarrollado para FUNCAVIDA (Fundación de Cáncer de Vida), una organización costarricense dedicada al apoyo de pacientes oncológicos. 
+                La aplicación web permite la gestión integral de supervivientes de cáncer, padrinos, voluntarios, sedes, activos, categorías y contactos de emergencia.
+              </p>
+              <p>
+                El sistema incluye características avanzadas como autenticación JWT, sistema de permisos granulares por ventana, 
+                exportación masiva de datos a Excel con estilos corporativos, sistema de estadísticas con visualizaciones interactivas (Chart.js), 
+                gestión de sesiones seguras, y modales reutilizables para mensajes de éxito/error. Cuenta con seeders para generar datos de prueba 
+                y documentación técnica completa de todos los módulos.
+              </p>
             </div>
 
             <!-- GitHub Repository -->
             <div class="project-modal-section mb-4">
               <h4 class="mb-3"><i class="bi bi-github me-2"></i>Repositorio de GitHub</h4>
-              <a href="(URL del repositorio frontend)" target="_blank" class="btn btn-outline-primary">
+              <a href="https://github.com/sehjo/Proyecto-analisis" target="_blank" class="btn btn-outline-primary">
                 <i class="bi bi-github me-2"></i>Ver en GitHub
               </a>
             </div>
@@ -275,24 +284,25 @@
             <div class="project-modal-section mb-4">
               <h4 class="mb-3"><i class="bi bi-diagram-3 me-2"></i>Arquitectura del Proyecto</h4>
               <div class="architecture-description">
-                <p>Arquitectura frontend basada en React con TypeScript, implementando patrones modernos de desarrollo y comunicación con APIs RESTful:</p>
+                <p>
+                  <strong>Arquitectura MVC Frontend con módulos ES6:</strong> Aplicación Single Page Application (SPA) que consume una API REST externa. 
+                  Utiliza patrón de separación de responsabilidades con estructura organizada en carpetas View, Controller y Core.
+                </p>
                 <ul>
-                  <li>Componentes React reutilizables con TypeScript para tipado fuerte</li>
-                  <li>Sistema de rutas con React Router y protección de rutas basada en autenticación</li>
-                  <li>Gestión de estado global para manejo eficiente de datos</li>
-                  <li>Integración con API backend mediante Axios para comunicación HTTP</li>
-                  <li>Interfaz de usuario para módulos de gestión de la ONG:
+                  <li><strong>View/</strong> - Vistas HTML organizadas por módulo (User, Cancer, GodParent, Headquarter, Assets, Category, EmergencyContact, Survivor, Volunteer)</li>
+                  <li><strong>Controller/</strong> - Lógica de negocio en JavaScript modular:
                     <ul>
-                      <li>Dashboard de Usuarios, Roles y Permisos con control de acceso visual</li>
-                      <li>Interfaces para gestión de Sobrevivientes, Padrinos y Voluntarios</li>
-                      <li>Sistema de gestión de Actividades, Sedes y Activos con calendarios interactivos</li>
-                      <li>Módulo de Proveedores y Categorías con filtros y búsqueda avanzada</li>
-                      <li>Formularios de Contactos de Emergencia con validación en tiempo real</li>
-                      <li>Visualización de Bitácoras de Seguridad con tablas paginadas</li>
-                      <li>Sistema de Recuperación de Contraseñas con validación de tokens</li>
-                      <li>Dashboard de Estadísticas y Reportes con gráficos interactivos</li>
+                      <li><code>api{Module}.js</code> - Cliente HTTP para comunicación con API REST usando fetch</li>
+                      <li><code>index{Module}.js</code> - Orquestación del módulo y manejo de eventos</li>
+                      <li><code>list{Module}.js</code> - Renderizado de listas con filtros dinámicos</li>
+                      <li><code>form{Module}.js</code> - Validación y envío de formularios</li>
+                      <li><code>utils/</code> - Utilidades compartidas (JWT, permisos, modales, exportación Excel, cliente API)</li>
                     </ul>
                   </li>
+                  <li><strong>Core/</strong> - Middleware de autenticación y manejo centralizado de errores</li>
+                  <li><strong>Content/</strong> - Estilos CSS unificados con variables CSS y diseño responsivo</li>
+                  <li><strong>seeders/</strong> - Generadores de datos de prueba para padrinos y sedes</li>
+                  <li><strong>docs/</strong> - Documentación técnica detallada de cada módulo y utilidad</li>
                 </ul>
               </div>
             </div>
@@ -302,14 +312,31 @@
               <h4 class="mb-3"><i class="bi bi-gear me-2"></i>Tecnologías Aplicadas</h4>
               <div class="technologies-list">
                 <ul>
-                  <li><strong>React</strong> - Biblioteca de JavaScript para construir interfaces de usuario</li>
-                  <li><strong>TypeScript</strong> - Superset de JavaScript con tipado estático</li>
-                  <li><strong>React Router</strong> - Librería de enrutamiento para aplicaciones React</li>
-                  <li><strong>Axios</strong> - Cliente HTTP para realizar peticiones a la API</li>
-                  <li><strong>CSS3/SCSS</strong> - Estilos modernos y responsivos</li>
-                  <li><strong>Vite</strong> - Herramienta de construcción rápida para proyectos frontend</li>
-                  <li><strong>ESLint</strong> - Herramienta de análisis de código para mantener calidad</li>
-                  <li><strong>Git</strong> - Control de versiones distribuido para desarrollo colaborativo</li>
+                  <li><strong>JavaScript ES6+</strong> - Módulos nativos, async/await, destructuring</li>
+                  <li><strong>HTML5</strong> - Semántico y accesible</li>
+                  <li><strong>CSS3</strong> - Custom Properties, Grid, Flexbox</li>
+                  <li><strong>jQuery 3.7.1</strong> - Manipulación DOM y AJAX</li>
+                  <li><strong>Chart.js 4.4.0</strong> - Gráficos interactivos (barras, líneas, pastel)</li>
+                  <li><strong>xlsx-js-style 1.2.0</strong> - Exportación Excel con estilos corporativos</li>
+                  <li><strong>Express.js 4.19.2</strong> - Servidor de archivos estáticos</li>
+                  <li><strong>JSON Web Tokens (JWT)</strong> - Autenticación y autorización segura</li>
+                  <li><strong>Fetch API</strong> - Comunicación con API REST</li>
+                  <li><strong>Git</strong> - Control de versiones distribuido</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Key Features -->
+            <div class="project-modal-section mb-4">
+              <h4 class="mb-3"><i class="bi bi-star me-2"></i>Características Destacadas</h4>
+              <div class="features-list">
+                <ul>
+                  <li><strong>🔐 Sistema de Autenticación & Autorización:</strong> Login seguro con JWT, recuperación de contraseña, permisos granulares por ventana, validación automática de sesión</li>
+                  <li><strong>📊 Sistema de Reportes & Estadísticas:</strong> Visualizaciones interactivas con Chart.js, exportación a Excel con estilos corporativos FUNCAVIDA</li>
+                  <li><strong>👥 Gestión de 9 Módulos Completos:</strong> Supervivientes, Padrinos, Voluntarios, Sedes, Activos, Usuarios, Categorías, Contactos de Emergencia, Cánceres</li>
+                  <li><strong>🛠️ Utilidades Reutilizables:</strong> ApiClient, ExcelExporter, JWT Manager, Modals System, PermissionsManager (~600 líneas de código duplicado eliminadas)</li>
+                  <li><strong>🌱 Seeders para Testing:</strong> Generadores automáticos de 100 registros con datos costarricenses realistas</li>
+                  <li><strong>📚 Documentación Técnica:</strong> 18 archivos de documentación con guías de uso y ejemplos</li>
                 </ul>
               </div>
             </div>
@@ -318,7 +345,7 @@
             <div class="project-modal-section mb-4">
               <h4 class="mb-3"><i class="bi bi-people me-2"></i>Colaboradores</h4>
               <div class="collaborators-info">
-                <p>Este proyecto fue desarrollado como parte de un voluntariado con un grupo de estudiantes de la carrera de informática empresarial de la Universidad de Costa Rica en colaboración con el encargado de TI de Funcavida.</p>
+                <p>Este proyecto fue desarrollado como parte de un voluntariado con un grupo de estudiantes de la carrera de informática empresarial de la Universidad de Costa Rica en colaboración con el encargado de TI de FUNCAVIDA.</p>
                 <ul>
                   <li>Kevin Alonso Alvarado Vargas - <a href="https://github.com/KevinXx04" target="_blank">https://github.com/KevinXx04</a></li>
                   <li>Stephanie Venegas Villalobos - <a href="https://github.com/stephvv23" target="_blank">https://github.com/stephvv23</a></li>
