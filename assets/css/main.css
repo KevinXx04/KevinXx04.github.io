@@ -1147,38 +1147,43 @@ section,
   box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent-color), transparent 70%);
 }
 
+.about .intro-content .cta-group .cv-download-options {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.about .intro-content .cta-group .cv-separator {
+  display: none;
+}
+
 .about .intro-content .cta-group .link-underline {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
-  position: relative;
+  gap: 6px;
+  padding: 9px 16px;
+  border-radius: 50px;
+  border: 1px solid color-mix(in srgb, var(--accent-color), transparent 55%);
+  background: color-mix(in srgb, var(--accent-color), transparent 94%);
   color: var(--accent-color);
-  padding-bottom: 4px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
   transition: 0.3s ease-in-out;
+  white-space: nowrap;
 }
 
-.about .intro-content .cta-group .link-underline::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 1px;
-  background: color-mix(in srgb, var(--accent-color), transparent 40%);
-  transform: scaleX(0.4);
-  transform-origin: left;
-  transition: 0.3s ease-in-out;
+.about .intro-content .cta-group .link-underline i {
+  font-size: 0.8rem;
+  opacity: 0.85;
 }
 
 .about .intro-content .cta-group .link-underline:hover,
 .about .intro-content .cta-group .link-underline:focus {
-  color: color-mix(in srgb, var(--accent-color), transparent 10%);
+  background: color-mix(in srgb, var(--accent-color), transparent 82%);
+  border-color: var(--accent-color);
   outline: none;
-}
-
-.about .intro-content .cta-group .link-underline:hover::after,
-.about .intro-content .cta-group .link-underline:focus::after {
-  transform: scaleX(1);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent-color), transparent 80%);
 }
 
 .about .profile-figure {
@@ -1370,6 +1375,19 @@ section,
   padding: 2rem;
   border-radius: 8px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+}
+
+.skills .skill-box i {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  font-size: 1.3rem;
+  border-radius: 10px;
+  color: var(--accent-color);
+  background: color-mix(in srgb, var(--accent-color), transparent 88%);
+  margin-bottom: 1rem;
 }
 
 .skills .skill-box h3 {
