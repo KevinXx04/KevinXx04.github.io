@@ -1355,6 +1355,16 @@ section,
 /*--------------------------------------------------------------
 # Skills Section
 --------------------------------------------------------------*/
+.skills .skills-category-title {
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--accent-color);
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+}
+
 .skills .skill-box {
   background-color: var(--surface-color);
   padding: 2rem;
