@@ -53,11 +53,11 @@
       </nav>
 
       <div class="header-social-links">
-        <a href="https://github.com/KevinXx04" class="twitter"><i class="bi bi-github"></i></a>
+        <a href="https://github.com/KevinXx04" class="github"><i class="bi bi-github"></i></a>
         <a href="https://www.linkedin.com/in/kevinalvaradovargas/" class="linkedin"><i class="bi bi-linkedin"></i></a>
-        <a href="#" class="instagram" data-bs-toggle="modal" data-bs-target="#emailModal"><i
+        <a href="#" class="email" data-bs-toggle="modal" data-bs-target="#emailModal"><i
             class="bi bi-envelope"></i></a>
-        <a href="#" class="facebook" data-bs-toggle="modal" data-bs-target="#phoneModal"><i
+        <a href="#" class="phone" data-bs-toggle="modal" data-bs-target="#phoneModal"><i
             class="bi bi-telephone"></i></a>
       </div>
 
@@ -197,8 +197,6 @@
                   <div class="portfolio-overlay">
                     <a href="#" data-bs-toggle="modal" data-bs-target="#projectModalBuscaminas"
                       class="portfolio-lightbox"><i class="bi bi-plus"></i></a>
-                    <a href="https://github.com/alvaradokevin820-dotcom/practicaReact" target="_blank"
-                      class="portfolio-details-link"><i class="bi bi-link"></i></a>
                   </div>
                 </div>
                 <div class="portfolio-info">
@@ -243,7 +241,7 @@
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-finance">
               <div class="portfolio-card">
                 <div class="portfolio-img">
                   <img src="assets/img/portfolio/CCSS_induction_practice_backend.png" alt="Backend CCSS Consultory" class="img-fluid">
@@ -274,8 +272,6 @@
                   <div class="portfolio-overlay">
                     <a href="#" data-bs-toggle="modal" data-bs-target="#projectModalCCSSFrontend"
                       class="portfolio-lightbox"><i class="bi bi-plus"></i></a>
-                    <a href="https://github.com/voluntarios/ccss-consultory-fnt" target="_blank"
-                      class="portfolio-details-link"><i class="bi bi-link"></i></a>
                   </div>
                 </div>
                 <div class="portfolio-info">
@@ -291,13 +287,35 @@
               </div>
             </div>
 
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-playground">
+              <div class="portfolio-card">
+                <div class="portfolio-img">
+                  <img src="assets/img/portfolio/minitaskapp_automation.png" alt="Mobile Test Automation Suite" class="img-fluid">
+                  <div class="portfolio-overlay">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#projectModalMiniTaskApp"
+                      class="portfolio-lightbox"><i class="bi bi-plus"></i></a>
+                  </div>
+                </div>
+                <div class="portfolio-info">
+                  <h4>Mobile Test Automation Suite</h4>
+                  <p>End-to-end mobile test automation suite built with Appium and pytest for a Flutter task management app, applying the Page Object Model pattern and covering 12 automated test scenarios.</p>
+                  <div class="portfolio-tags">
+                    <span>Python</span>
+                    <span>Appium</span>
+                    <span>Flutter</span>
+                    <span>pytest</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div><!-- End Portfolio Items Container -->
 
 
         </div>
 
         <div class="text-center mt-5" data-aos="fade-up" data-aos-delay="400">
-          <a href="#portfolio" class="btn btn-primary">View All Projects</a>
+          <a href="https://github.com/KevinXx04" target="_blank" class="btn btn-primary">View All on GitHub</a>
         </div>
 
       </div>
@@ -305,6 +323,83 @@
     </section><!-- /Portfolio Section -->
 
   </main>
+
+  <!-- Project Details Modal MiniTaskApp -->
+  <div class="modal fade" id="projectModalMiniTaskApp" tabindex="-1" aria-labelledby="projectModalMiniTaskAppLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-0">
+          <div class="project-modal-hero">
+            <img src="assets/img/portfolio/minitaskapp_automation.png" alt="Mobile Test Automation Suite" class="img-fluid w-100">
+          </div>
+          <div class="container py-4">
+            <div class="project-modal-title mb-4">
+              <h2 class="fw-bold">Mobile Test Automation Suite — MiniTaskApp</h2>
+              <p class="text-muted">End-to-end mobile automation with Appium, Python & Flutter</p>
+            </div>
+            <div class="project-modal-section mb-4">
+              <h4 class="mb-3"><i class="bi bi-file-text me-2"></i>Project Description</h4>
+              <p>Personal project combining a Flutter task management app as the system under test with a full end-to-end mobile automation suite. Built a Flutter (Dart) app featuring login, CRUD task operations, and confirmation dialogs, then designed and implemented an Appium-based test suite using the Page Object Model (POM) pattern in Python to automate 12 test scenarios on a physical Android device.</p>
+            </div>
+            <div class="project-modal-section mb-4">
+              <h4 class="mb-3"><i class="bi bi-diagram-3 me-2"></i>Project Architecture</h4>
+              <div class="architecture-description">
+                <p>Two-layer architecture: the Flutter app as the system under test and the Python/Appium suite as the test layer:</p>
+                <ul>
+                  <li><strong>Flutter App (SUT):</strong> Login screen, task list with CRUD operations, confirmation dialogs — compiled and deployed on a physical Android device via ADB</li>
+                  <li><strong>Page Object Model:</strong> Dedicated page classes (LoginPage, TaskPage, EditPage) encapsulating element locators and interaction methods</li>
+                  <li><strong>Test Suite:</strong> 12 pytest test cases covering login validation, task creation, editing, deletion, and full workflow scenarios</li>
+                  <li><strong>Appium Driver:</strong> Flutter driver integration for precise element locating via semantic labels</li>
+                </ul>
+              </div>
+            </div>
+            <div class="project-modal-section mb-4">
+              <h4 class="mb-3"><i class="bi bi-gear me-2"></i>Technologies Applied</h4>
+              <div class="technologies-list">
+                <ul>
+                  <li><strong>Flutter & Dart</strong> — Cross-platform mobile app (system under test)</li>
+                  <li><strong>Python</strong> — Test automation scripting language</li>
+                  <li><strong>Appium</strong> — Mobile automation framework with Flutter driver</li>
+                  <li><strong>pytest</strong> — Test runner and assertion framework</li>
+                  <li><strong>Android & ADB</strong> — Physical device deployment and debugging</li>
+                  <li><strong>Page Object Model</strong> — Design pattern for maintainable test structure</li>
+                  <li><strong>Git</strong> — Version control</li>
+                </ul>
+              </div>
+            </div>
+            <div class="project-modal-section mb-4">
+              <h4 class="mb-3"><i class="bi bi-star me-2"></i>Key Features</h4>
+              <div class="features-list">
+                <ul>
+                  <li><strong>12 Automated Test Cases:</strong> Login validation, task CRUD, editing workflows, and confirmation dialogs</li>
+                  <li><strong>Page Object Model:</strong> Clean separation of locators and test logic for easy maintenance</li>
+                  <li><strong>Physical Device Testing:</strong> All tests executed on a real Android device via ADB</li>
+                  <li><strong>Flutter + Appium Integration:</strong> Uses Appium's Flutter driver for semantic element locating</li>
+                  <li><strong>Full SUT Ownership:</strong> App designed and built from scratch specifically for this automation exercise</li>
+                </ul>
+              </div>
+            </div>
+            <div class="project-modal-section mb-4">
+              <h4 class="mb-3"><i class="bi bi-people me-2"></i>Collaborators</h4>
+              <div class="collaborators-info">
+                <p>Personal project developed as a practical exercise in mobile QA automation, combining Flutter app development with Appium test engineering.</p>
+                <ul>
+                  <li>Kevin Alonso Alvarado Vargas — <a href="https://github.com/KevinXx04" target="_blank">https://github.com/KevinXx04</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer border-0">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Project Details Modal Backend -->
   <div class="modal fade" id="projectModalBackend" tabindex="-1" aria-labelledby="projectModalBackendLabel"
@@ -336,14 +431,6 @@
                 control.</p>
             </div>
 
-            <!-- GitHub Repository -->
-            <div class="project-modal-section mb-4">
-              <h4 class="mb-3"><i class="bi bi-github me-2"></i>GitHub Repository</h4>
-              <a href="https://github.com/stephvv23/API-Node.js-/tree/Q%26A-api" target="_blank"
-                class="btn btn-outline-primary">
-                <i class="bi bi-github me-2"></i>View on GitHub
-              </a>
-            </div>
 
             <!-- Project Architecture -->
             <div class="project-modal-section mb-4">
@@ -460,13 +547,6 @@
               </p>
             </div>
 
-            <!-- GitHub Repository -->
-            <div class="project-modal-section mb-4">
-              <h4 class="mb-3"><i class="bi bi-github me-2"></i>GitHub Repository</h4>
-              <a href="https://github.com/sehjo/Proyecto-analisis" target="_blank" class="btn btn-outline-primary">
-                <i class="bi bi-github me-2"></i>View on GitHub
-              </a>
-            </div>
 
             <!-- Project Architecture -->
             <div class="project-modal-section mb-4">
@@ -599,13 +679,6 @@
                 system, all with modular architecture and parallel execution of models.</p>
             </div>
 
-            <!-- GitHub Repository -->
-            <div class="project-modal-section mb-4">
-              <h4 class="mb-3"><i class="bi bi-github me-2"></i>GitHub Repository</h4>
-              <a href="https://github.com/tuusuario/IntelliVerse" target="_blank" class="btn btn-outline-primary">
-                <i class="bi bi-github me-2"></i>View on GitHub
-              </a>
-            </div>
 
             <!-- Project Architecture -->
             <div class="project-modal-section mb-4">
@@ -888,14 +961,6 @@
                 documentation is automatically generated with Scramble.</p>
             </div>
 
-            <!-- GitHub Repository -->
-            <div class="project-modal-section mb-4">
-              <h4 class="mb-3"><i class="bi bi-github me-2"></i>GitHub Repository</h4>
-              <a href="https://github.com/KevinXx04/ccss_consultory_bk" target="_blank"
-                class="btn btn-outline-primary">
-                <i class="bi bi-github me-2"></i>View on GitHub
-              </a>
-            </div>
 
             <!-- Project Architecture -->
             <div class="project-modal-section mb-4">
@@ -997,14 +1062,6 @@
                 doctor's workflow by always surfacing the most critical case first.</p>
             </div>
 
-            <!-- GitHub Repository -->
-            <div class="project-modal-section mb-4">
-              <h4 class="mb-3"><i class="bi bi-github me-2"></i>GitHub Repository</h4>
-              <a href="https://github.com/voluntarios/ccss_consultory_fnt" target="_blank"
-                class="btn btn-outline-primary">
-                <i class="bi bi-github me-2"></i>View on GitHub
-              </a>
-            </div>
 
             <!-- Project Architecture -->
             <div class="project-modal-section mb-4">
@@ -1109,13 +1166,6 @@
                 system, and automatic detection of victory or defeat.</p>
             </div>
 
-            <!-- GitHub Repository -->
-            <div class="project-modal-section mb-4">
-              <h4 class="mb-3"><i class="bi bi-github me-2"></i>GitHub Repository</h4>
-              <a href="https://github.com/KevinXx04/Buscaminas-React" target="_blank" class="btn btn-outline-primary">
-                <i class="bi bi-github me-2"></i>View on GitHub
-              </a>
-            </div>
 
             <!-- Project Architecture -->
             <div class="project-modal-section mb-4">
@@ -1298,7 +1348,7 @@
           <div class="contact-info">
             <div class="mb-3">
               <strong>Personal Email:</strong><br>
-              <a href="mailto:kevinalvarado2004@gmail.com" class="text-decoration-none">kevinalvarado2004@gmail.com</a>
+              <a href="mailto:ualvaradokevin2005@gmail.com" class="text-decoration-none">ualvaradokevin2005@gmail.com</a>
             </div>
             <div>
               <strong>University Email:</strong><br>
